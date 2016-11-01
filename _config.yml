@@ -10,7 +10,7 @@ markdown: kramdown
 #Links that will appear in the navbar
 primarylinks:
  - title: Blog
-   url: http://www.yboyacigil.com/
+   url: https://www.yboyacigil.com/
  - title: GitHub
    url: https://github.com/yboyacigil
  - title: DZone
@@ -31,7 +31,7 @@ skills:
  - Big Data
 
 #Blogfeed is optional - including this will add JS to call the feed and populate blog list
-blogfeed: http://www.yboyacigil.com/feeds/posts/default
+blogfeed: https://yboyacigil.blogspot.com/feeds/posts/default
 
 #Work experience is required
 roles:
