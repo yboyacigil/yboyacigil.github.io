@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Scala Nil, Nothing, Null"
 date:   2013-01-09 16:16:01 +0200
 categories: turkish scala

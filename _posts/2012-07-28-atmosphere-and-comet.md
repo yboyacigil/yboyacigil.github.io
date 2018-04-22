@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Atmosfer ve Comet"
 date:   2012-07-28 16:16:01 +0200
 categories: turkish

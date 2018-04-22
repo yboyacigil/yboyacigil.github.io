@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Java Exception"
 date:   2010-11-02 16:16:01 +0200
 categories: turkish java

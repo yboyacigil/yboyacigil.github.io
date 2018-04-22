@@ -16,7 +16,7 @@ He has been actively working & interested on subjects:
 - Backend
 - Big data technologies & machine learning
 - Agile software development practices
-- Frontend
+- Fullstack
 - Functional programming
 
 

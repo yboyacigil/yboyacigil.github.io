@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "JQuery ve Javascript"
 date:   2012-07-29 16:16:01 +0200
 categories: turkish javascript

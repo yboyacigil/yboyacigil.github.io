@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "jvisualvm, jmxsh, jstat (potpuri*)"
 date:   2011-08-16 16:16:01 +0200
 categories: turkish java

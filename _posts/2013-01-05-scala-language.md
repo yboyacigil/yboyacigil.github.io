@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Scala Programlama Dili"
 date:   2013-01-05 16:16:01 +0200
 categories: turkish scala

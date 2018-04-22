@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Code Review"
 date:   2010-12-22 16:16:01 +0200
 categories: turkish

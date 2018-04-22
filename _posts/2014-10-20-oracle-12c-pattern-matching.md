@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Oracle 12c Pattern Matching"
 date:   2014-10-20 16:16:01 +0200
 categories: turkish

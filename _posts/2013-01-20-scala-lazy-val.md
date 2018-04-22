@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Scala 'lazy val'"
 date:   2013-01-20 16:16:01 +0200
 categories: turkish scala

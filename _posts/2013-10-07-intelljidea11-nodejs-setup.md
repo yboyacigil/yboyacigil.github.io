@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "IntellijIdea 11 ile NodeJS Kullanımı"
 date:   2013-10-13 16:16:01 +0200
 categories: turkish nodejs

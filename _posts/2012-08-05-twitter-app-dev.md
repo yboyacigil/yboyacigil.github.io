@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Twitter Uygulaması Geliştirmek"
 date:   2012-08-05 16:16:01 +0200
 categories: turkish

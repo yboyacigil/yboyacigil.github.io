@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Apache Camel ile Veri Entegrasyonu"
 date:   2014-10-13 16:16:01 +0200
 categories: turkish
