@@ -1,126 +1,276 @@
-# Site settings
-title: Yusuf Boyacıgil
-twitter_username: yboyacigil
-name: Yusuf Boyacıgil
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
 
-# Build settings
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
+theme                    : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+since                    : 2009
+locale                   : "en-US"
+title                    : "yboyacigil.com"
+title_separator          : "-"
+name                     : "Yusuf Boyacıgil"
+description              : "An amazing website."
+url                      : https://www.yboyacil.com
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : # ['name', 'email', 'url', 'message']
+  branch                 : # "master"
+  commitMessage          : # "New comment."
+  filename               : # comment-{@timestamp}
+  format                 : # "yml"
+  moderation             : # true
+  path                   : # "/_data/comments/{options.slug}" (default)
+  requiredFields         : # ['name', 'email', 'message']
+  transforms:
+    email                : # "md5"
+  generatedFields:
+    date:
+      type               : # "date"
+      options:
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
+twitter:
+  username               : yboyacigil
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+
+
+# Site Author
+author:
+  name             : "Yusuf Boyacıgil"
+  avatar           : "/assets/images/bio-photo.jpg"
+  bio              : "Software Engineer"
+  location         : "Stockholm"
+  email            : 
+  uri              :
+  home             : # null (default), "absolute or relative url to link to author home"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : yboyacigil
+  gitlab           :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         : yusufboyacigil
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
+  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  tumblr           :
+  twitter          : yboyacigil
+  vine             :
+  weibo            :
+  xing             :
+  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-#User specific content
-#Links that will appear in the navbar
-primarylinks:
- - title: Blog
-   url: https://www.yboyacigil.com/
- - title: GitHub
-   url: https://github.com/yboyacigil
- - title: DZone
-   url: https://dzone.com/users/139812/yusufboyacigil.html
- - title: LinkedIn
-   url: https://tr.linkedin.com/in/yusufboyacigil
 
-#Any buzzword skills you want to include
-skills:
- - Java
- - Python
- - Scala
- - NodeJS
- - Spring
- - Maven
- - SQL
- - REST
- - Big Data
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-#Blogfeed is optional - including this will add JS to call the feed and populate blog list
-blogfeed: https://yboyacigil.blogspot.com/feeds/posts/default
 
-#Work experience is required
-roles:
- - title: Software Architect/Java Developer
-   start: 2015
-   end: Ongoing
-   employer: ComeOn!
-   description: Design and development of new features for growing business needs. Leading team of developers.
- - title: Product Architect
-   start: 2013
-   end: 2015
-   employer: Asseco South Eastern Europe
-   description: Enterprise fraud management product development.
- - title: IT Service Quality Assurance Expert
-   start: 2012
-   end: 2013
-   employer: Vodafone Turkey
-   description: Implementation of procedures to provide management guidance and to optimize performance of vital Vodafone IT services.
- - title: Software Architect
-   start: 2005
-   end: 2012
-   employer: Vodafone Technology
-   description: VAS and IN products development.
- - title: Software Engineer
-   start: 2004
-   end: 2005
-   employer: Telenity
-   description: Location Based IN Services and Unified Messaging System web application development.
- - title: Software Engineer
-   start: 2000
-   end: 2003
-   employer: Mor Yazılım
-   description: E-commerce application suite development.
- - title: Software Engineer
-   start: 1999
-   end: 2000
-   employer: MyNet
-   description: Mynet portal software development.
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-#Education is required
-education:
- - level: Bachelor of Science (B.Sc.)
-   date: 1999
-   subject: Computer Science
-   school: Yıldız Technical University
 
-#This section is optional (as is the image link below)
-coursera:
-   profileurl: https://www.coursera.org/user/i/a4581220f781059a5123c97d5af08923
-   courses:
-    - title: Functional Programming Principles in Scala
-      link: https://www.coursera.org/course/progfun
-      #optionalimage: https://d1z850dzhxs7de.cloudfront.net/topics/progfun/small-icon.hover.png
-      date: June 03, 2013
-    - title: Startup Engineering
-      link: https://www.coursera.org/course/startup
-      #optionalimage: https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d15cw65ipctsrr.cloudfront.net/49/baeb10352b11e4a4351b48ac74e750/logo.png?auto=format&dpr=1&w=451
-      date: September 23, 2013
-    - title: Machine Learning
-      link: https://www.coursera.org/learn/machine-learning
-      #optionalimage: https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/topics/ml/small-icon.png
-      date: January 18, 2014
-    - title: The Data Scientist’s Toolbox
-      link: https://www.coursera.org/learn/data-scientists-tools
-      #optionalimage: https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera.s3.amazonaws.com/topics/ml/small-icon.png
-      date: April 03, 2015
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-#List of interesting Github repo/projects to include - optional
-github:
- - yboyacigil/gem-smash-game
- - yboyacigil/lodash-experiments
- - yboyacigil/twitter-streaming-app
- - yboyacigil/spring-reactor-twitter
- - yboyacigil/hackathon-feb16-spark-app
 
-#Stackoverflow flair is optional
-#stackoverflow:
-#   profileurl: http://stackoverflow.com/users/258813/rhinds
-#   flairimageurl: http://stackoverflow.com/users/flair/258813.png
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
-#Mobile apps section is optional
-#apps:
-# - name: Chuck the Quiz
-#   platform: Android
-#   url: https://play.google.com/store/apps/details?id=com.tmm.android.chuck&feature=search_result#?t=W251bGwsMSwxLDEsImNvbS50bW0uYW5kcm9pZC5jaHVjayJd
-#   description: A basic early Android app (open sourced)
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
-#An additional info freetext section is optional at the bottom of the page - can be text or HTML
-additionalinfo: |
-   I maintain a personal blog on software programming; develop side projects using Google App Engine, Amazon Web Services;
-   love to program in Python, Scala, Javascript (Node JS). Trying to find some space to learn interesting subjects such as Big Data,
-   Machine Learning on Coursera.
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
+   # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
