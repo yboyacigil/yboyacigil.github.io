@@ -2,6 +2,9 @@
 title:  "Oracle 12c Pattern Matching"
 date:   2014-10-20 16:16:01 +0200
 categories: turkish
+header:
+  overlay_image: /assets/images/oracle12c-header.png
+  overlay_filter: 0.5
 ---
 
 Oracle Türkiye'nin geçen hafta düzenlediği Oracle 12c etkinliğinde, yeni sürüm ile ilgili birçok yenilik tanıtıldı. Bunlar arasında: Database As Service, Pluggable DB, In-Memory Option ve Pattern Matching daha çok dikkatimi çekti.

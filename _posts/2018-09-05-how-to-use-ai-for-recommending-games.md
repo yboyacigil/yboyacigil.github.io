@@ -2,6 +2,11 @@
 title:  "How to Use Machine Learning to Recommend Games Based on Player Preference"
 date:   2018-09-05 16:47:00 +0300
 categories: english machine-learning
+header:
+  overlay_image: /assets/images/ml-game-rec-post-header.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Edx**](https://www.edx.org/course/machine-learning-with-python-from-linear-models-to-deep-learning)"
+  
 ---
 
 In this post, I will show how to use machine learning to recommend games for a player based on his/her preference. This can be a used to personalize the display order of games if there are plenty of games hence creates engagement and early conversion by placing games that a player prefers to see on top.

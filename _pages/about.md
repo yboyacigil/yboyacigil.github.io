@@ -2,7 +2,7 @@
 permalink: /about/
 title:  "About"
 ---
-Welcome to Yusuf Boyacıgil's personal web site.
+Welcome to Yusuf Boyacıgil's Blog!
 
 He works as a senior software engineer and has been working for several companies on different projects in Internet and Telecom domains.
 

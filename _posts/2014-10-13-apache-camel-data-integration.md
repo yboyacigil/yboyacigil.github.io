@@ -2,6 +2,9 @@
 title:  "Apache Camel ile Veri Entegrasyonu"
 date:   2014-10-13 16:16:01 +0200
 categories: turkish
+header:
+  overlay_image: /assets/images/apache-camel-header.png
+  overlay_filter: 0.5
 ---
 Finans/Bankacılık alanı başta olmak üzere, BT dünyasında veri işleme üzerine geliştirilen çözümlerin adreslemesi gereken temel sorun verinin nasıl kullanılabilir hale getirileceği, nasıl doğrulanıp dönüştürüleceği yani veri entegrasyonudur.
 
