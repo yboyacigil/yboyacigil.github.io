@@ -21,7 +21,7 @@ Below you can find specific implementation sections with example code snippets.
 
 JAX-RS is a well-defined standart for developing REST endpoints and you can use JAX-RS with SpringBoot. All you need to do is to bring right dependencies into the scope.
 
-```
+```groovy
 dependencies {
 
     testCompile 'junit:junit'
@@ -35,7 +35,7 @@ dependencies {
 
 I chose JAX-RS over Spring MVC, I believe, JAX-RS has better model than Spring MVC. But using it, brings a small overhead that is you need to configure it manually which is fairly easy as a Spring configuration class:
 
-```
+```java
 @Configuration
 public class JerseyConfig  extends ResourceConfig {
 
@@ -52,7 +52,7 @@ public class JerseyConfig  extends ResourceConfig {
 
 As mentioned above, I created one actor to handle all requests of a player during game play. Since actors have one mailbox for messages and messages are processed in order, that makes it more suitable in processing bets & winnings in the order it has received. Simply named it `GamePlayActor` as follows:
 
-```
+```java
 @Component
 @Scope("prototype")
 public class GamePlayActor extends AbstractLoggingActor {
@@ -80,7 +80,7 @@ As you notice, the actor is defined as a Spring component with `prototype` scope
 
 We need one more thing which is an extension for actor system that can produce actor instances with their dependencies.
 
-```
+```java
 import akka.actor.Extension;
 import akka.actor.Props;
 import org.springframework.context.ApplicationContext;
@@ -103,7 +103,7 @@ public class SpringExtension implements Extension {
 
 where `SpringActorProducer` is a factory class for creating actor instances as Spring beans:
 
-```
+```java
 import akka.actor.Actor;
 import akka.actor.IndirectActorProducer;
 import org.springframework.context.ApplicationContext;
@@ -136,7 +136,7 @@ public class SpringActorProducer implements IndirectActorProducer {
 
 Akka actor are by design reactive. To complete the picture, you can use JAX-RS `AsyncResponse` in your endpoint:
 
-```
+```java
 @GET
 @Path("/players/{pid}/account/balance")
 @Produces(MediaType.APPLICATION_JSON)
@@ -181,7 +181,7 @@ Finally, I want to show how you can use multiple languages in your project. You 
 
 To use Groovy in your project just enable plugin:
 
-```
+```groovy
 plugins {
     id 'java'
     id 'groovy'
@@ -191,7 +191,7 @@ plugins {
 
 and for Spock bring these in to compile and test scopes:
 
-```
+```groovy
 dependencies {
     
     // Spock
@@ -204,7 +204,7 @@ dependencies {
 
 Then you can write integration tests like: 
 
-```
+```groovy
 def ".../currency should return ok for an existing player info"() {
     given:
         def pid = 1L

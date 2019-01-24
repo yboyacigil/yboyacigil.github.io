@@ -31,7 +31,7 @@ In online casino system collecting this info is no brainer. The only concern is 
 
 Using Python SDK, I imported my events writing the script `import_player_events.py`:
 
-```
+```bash
 python import_player_events.py --access_key <your access key>
 ```
 
@@ -43,7 +43,7 @@ The important thing to note in here is that you need to define your model accord
 
 Training is fairly easy with PredictionIO. All you need to run:
 
-```
+```bash
 pio train
 ```
 
@@ -55,7 +55,7 @@ Once you trained your model and deployed your engine to PredictionIO you can ret
 
 Suppose you want to get recommended games for a given player. Just call the query endpoint with game ids like:
 
-```
+```bash
 curl -H "Content-Type: application/json" \
 -d '{ "player": 136286, "games": [0, 1, 2, 3, 4]}' \
 http://localhost:8000/queries.json
@@ -63,7 +63,7 @@ http://localhost:8000/queries.json
 
 The games will be sorted out in the response like:
 
-```
+```json
 {
   "gameScores": [
     {
